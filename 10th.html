@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="jquery.typist.js"></script>
+    <!--Link to github of pluggin https://github.com/albburtsev/jquery.typist-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
 
@@ -16,6 +18,29 @@
     <!--font-family: 'Exo 2', sans-serif;-->
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
     <!--font-family: 'Audiowide', cursive;-->
+    <script>
+        $(function() {
+            $('.typist')
+                .typist({
+                    text: ''
+                })
+                .typistPause(1500)
+                .typistAdd('Processing')
+                .typistPause(1000)
+                .typistRemove(10)
+                .typistPause(300)
+                .typistAdd('Electronics')
+                .typistPause(1000)
+                .typistRemove(11)
+                .typistPause(300)
+                .typistAdd('Data')
+                .typistPause(1000)
+                .typistRemove(4)
+                .typistPause(300)
+                .typistAdd('10th Grade')
+                .typistStop();
+        });
+    </script>
 </head>
 
 <body>
@@ -35,15 +60,10 @@
                     <li>
                         <a href="9th.html">9th Grade</a>
                     </li>
-
                     <li>
-
-
-
                         <li class="active">
                             <a href="10th.html">10th Grade</a>
                         </li>
-
                     </li>
                     <li>
                         <a href="11th.html">11th Grade</a>
@@ -55,8 +75,10 @@
             </nav>
         </div>
     </header>
-    <div class="sep">
-        <h1 class="text-center title">10th Grade Sep!</h1>
+    <div class="titleBG">
+        <div class="box">
+            <h1 class="text-center title typist"></h1>
+        </div>
     </div>
 </body>
 
