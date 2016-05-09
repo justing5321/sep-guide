@@ -8,14 +8,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="jquery.typist.js"></script>
+    <!--Link to github of pluggin https://github.com/albburtsev/jquery.typist-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
-
     <!--fonts-->
     <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
     <!--font-family: 'Exo 2', sans-serif;-->
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
     <!--font-family: 'Audiowide', cursive;-->
+    <script>
+        $(function() {
+            $('.typist')
+                .typist({
+                    text: ''
+                })
+                .typistPause(1500)
+                .typistAdd('Scratch')
+                .typistPause(1000)
+                .typistRemove(7)
+                .typistPause(300)
+                .typistAdd('Robotics')
+                .typistPause(1000)
+                .typistRemove(8)
+                .typistPause(300)
+                .typistAdd('Python')
+                .typistPause(1000)
+                .typistRemove(6)
+                .typistPause(300)
+                .typistAdd('9th Grade')
+                .typistStop();
+        });
+    </script>
 </head>
 
 <body>
@@ -33,15 +57,10 @@
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                 <ul class="nav navbar-nav">
                     <li>
-
-                          
-
                         <li class="active">
                             <a href="9th.html">9th Grade</a>
                         </li>
-
                     </li>
-
                     <li>
                         <a href="10th.html">10th Grade</a>
                     </li>
@@ -55,6 +74,11 @@
             </nav>
         </div>
     </header>
+    <div class="titleBG">
+        <div class="box">
+            <h1 class="text-center title typist"></h1>
+        </div>
+    </div>
 </body>
 
 </html>
