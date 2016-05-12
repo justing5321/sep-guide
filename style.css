@@ -1,8 +1,8 @@
-.font-audio {
+h1, h2, h4, .font-audio {
     font-family: 'Audiowide', cursive;
 }
 
-a, .font-exo {
+p, a, .font-exo {
     font-family: 'Exo 2', sans-serif;
 }
 
