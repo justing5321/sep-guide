@@ -1,13 +1,22 @@
-h1, h2, h4, .font-audio {
+h1,
+h2,
+h4,
+.font-audio {
     font-family: 'Audiowide', cursive;
 }
 
-p, a, .font-exo {
+h1 {
+    font-size: 56px;
+}
+
+p,
+a,
+.font-exo {
     font-family: 'Exo 2', sans-serif;
 }
 
 p {
-    font-size: 15px;
+    font-size: 25px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -24,3 +33,20 @@ p {
     padding-bottom: 80px;
 }
 
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 46px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 40px;
+    }
+}
