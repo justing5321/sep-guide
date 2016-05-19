@@ -19,7 +19,29 @@
     <!--font-family: 'Audiowide', cursive;-->
 
 </head>
-
+    <script>
+        $(function() {
+            $('.typist')
+                .typist({
+                    text: ''
+                })
+                .typistPause(1500)
+                .typistAdd('Scratch')
+                .typistPause(1000)
+                .typistRemove(10)
+                .typistPause(300)
+                .typistAdd('Robotics')
+                .typistPause(1000)
+                .typistRemove(11)
+                .typistPause(300)
+                .typistAdd('Python')
+                .typistPause(1000)
+                .typistRemove(4)
+                .typistPause(300)
+                .typistAdd('9th Grad')
+                .typistStop();
+        });
+    </script>
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
         <div class="container">
